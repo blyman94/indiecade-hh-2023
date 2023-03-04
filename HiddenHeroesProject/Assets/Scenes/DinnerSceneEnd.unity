@@ -1294,45 +1294,45 @@ MonoBehaviour:
   TextPopupAnimator: {fileID: 30682970}
   NextButtonAnimator: {fileID: 1008163884}
   Passages:
-  - 'Friend 3: The news reported several students dead.'
+  - 'Friend 2: The news reported several students dead.'
   - "Friend 1: Yeah, there were a lot of gunshots. I\u2019d be surprised if everyone
     was okay."
-  - 'You: I saw someone come out of their apartment building and try to attack a
-    soldier. I wonder if any of the dead people are soldiers.'
-  - 'Friend 3: Probably. The protestors were definitely passionate.'
-  - 'Friend 2: There were some people who refused to leave.'
-  - 'Friend 3: They were probably arrested. Or killed.'
-  - 'Friend 2: Yeah. I wonder if that one person ever found her sister.'
-  - 'Friend 1: I hope so.'
-  - "Friend 2: Hey, I just noticed, you weren\u2019t late to dinner today. You decided
+  - 'Friend 3: I saw someone come out of their apartment building and try to attack
+    a soldier. I wonder if any of the dead people are soldiers.'
+  - 'Friend 1: Probably. The protestors were definitely passionate.'
+  - 'You: There were some people who refused to leave.'
+  - 'Friend 2: They were probably arrested. Or killed.'
+  - 'You: Yeah. I wonder if that one person ever found her sister.'
+  - 'Friend 3: I hope so.'
+  - "Friend 1: Hey, I just noticed, you weren\u2019t late to dinner today. You decided
     not to schmooze?"
-  - 'Friend 1: Doing someone a favor is not schmoozing.'
-  - 'Friend 3: You were only doing it in hopes of getting a raise.'
-  - 'Friend 2: I never said that.'
+  - 'Friend 3: Doing someone a favor is not schmoozing.'
+  - 'Friend 1: You were only doing it in hopes of getting a raise.'
+  - 'Friend 3: I never said that.'
   - "Friend 1: You didn\u2019t have to. No one would ever get their boss food out
     of pure generosity. Especially him. He\u2019s a man only a mother could love."
-  - 'Friend 2: The cafe was closed.'
-  - "Friend 3: You\u2019re not denying that you were trying to schmooze."
-  - 'You: Would you stop saying schmooze?'
+  - 'Friend 3: The cafe was closed.'
+  - "Friend 1: You\u2019re not denying that you were trying to schmooze."
+  - 'Friend 3: Would you stop saying schmooze?'
   - 'Friend 2: Wait, wait. The cafe was closed?'
   - 'Friend 3: Yeah, they said they had to make some repairs today.'
-  - 'Friend 3: At least this place is open.'
+  - 'You: At least this place is open.'
   - "Friend 1: Yeah, or else we\u2019d have to have dinner at your house. And no
     one wants that."
-  - "Friend 3: I have to head out soon, I\u2019m working overtime tomorrow."
-  - 'Friend 1: Really?'
-  - "You: Yeah, there\u2019s blackouts on the East side of the city. We need things
-    up and running again as soon as possible."
+  - "Friend 2: I have to head out soon, I\u2019m working overtime tomorrow."
+  - 'You: Really?'
+  - "Friend 2: Yeah, there\u2019s blackouts on the East side of the city. We need
+    things up and running again as soon as possible."
   - "Friend 1: Yeah, I\u2019ve got a long day of work cut out for me tomorrow, too.
     Not much got done today."
-  - "Friend 2: Yeah, I was too exhausted from last night. But I\u2019m not really
+  - "Friend 3: Yeah, I was too exhausted from last night. But I\u2019m not really
     tired right now, which is weird. I guess I\u2019m just more hungry than tired."
-  - "Friend 3: Not me. I\u2019m heading out. I need sleep."
-  - 'Friend 2: Bye.'
-  - "Friend 3: I\u2019m coming with you."
-  - "Friend 1: I\u2019ll head out, too. Bye everyone!"
-  - 'Friend 3: See you tomorrow!'
-  - 'Friend 2: Get some rest!'
+  - "Friend 1: Not me. I\u2019m heading out. I need sleep."
+  - 'Friend 3: Bye.'
+  - "Friend 2: I\u2019m coming with you."
+  - "You: I\u2019ll head out, too. Bye everyone!"
+  - 'Friend 1: See you tomorrow!'
+  - 'Friend 3: Get some rest!'
   - 'You: You too.'
   PassagesAfter: []
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
