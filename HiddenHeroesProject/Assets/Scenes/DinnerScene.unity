@@ -1154,53 +1154,49 @@ MonoBehaviour:
     few weeks. Maybe you can tell her to go there?"
   - 'Friend 2: Downtown? Where the protests are happening?'
   - 'Friend 1: Yeah, I go there all the time. Just keep your head down.'
-  - 'Friend 1: Yeah, I go there all the time. Just keep your head down.'
-  - "Friend 1: Maybe, but it\u2019s still risky."
+  - "Friend 2: Maybe, but it\u2019s still risky."
   - "Friend 1: They\u2019re not after us anyway. They\u2019re too busy with the students."
-  - 'Friend 1: I heard the students are negotiating now.'
-  - 'Friend 1: Oh? And how would you know?'
+  - 'Friend 3: I heard the students are negotiating now.'
+  - 'Friend 2: Oh? And how would you know?'
   - "Friend 1: Apparently he\u2019s got little birds on his shoulders telling him."
-  - 'Friend 1: Can they also tell us when the next market sale is happening?'
-  - 'Friend 1: Hey, I just know people who live downtown, who are protesting. If
+  - 'Friend 2: Can they also tell us when the next market sale is happening?'
+  - 'Friend 3: Hey, I just know people who live downtown, who are protesting. If
     you guys worked further into the city, you would hear this stuff, too.'
-  - 'Friend 1: I have been hearing similar things. Negotiations, I mean.'
-  - "Friend 1: What is there to talk about in these negotiations? They have to be
-    one-sided, don\u2019t you think?"
-  - "Friend 1: There\u2019s got to be some sort of solution."
-  - 'Friend 1: Right?'
+  - 'You: I have been hearing similar things. Negotiations, I mean.'
+  - "Friend 2: What is there to talk about? They have to be one-sided, don\u2019t
+    you think?"
+  - "Friend 3: There\u2019s got to be some sort of solution..."
+  - 'Friend 3: ...right?'
   - 'Friend 1: Whatever the solution is, those people in the square are putting up
     one hell of a sit-in.'
-  - "Friend 1: They\u2019re not eating, even."
+  - "Friend 3: They\u2019re not eating, even."
   - 'Friend 1: More food for us, I suppose.'
-  - 'Friend 1: Speaking of which, this food is great. We should come here more often.'
+  - 'You: Speaking of which, this food is great. We should come here more often.'
   - 'Friend 1: Agreed. Same time, tomorrow?'
-  - 'Friend 1: Works for me.'
-  - "Friend 1: I might run a bit late, but I\u2019ll be here."
-  - 'Friend 1: The boss is making you work late again?'
-  - "Friend 1: He\u2019s not making me. I\u2019m doing it of my own free will."
+  - 'Friend 2: Works for me.'
+  - "Friend 3: I might run a bit late, but I\u2019ll be here."
+  - 'Friend 2: The boss is making you work late again?'
+  - "Friend 3: He\u2019s not making me. I\u2019m doing it of my own free will."
   - "Friend 1: Wow, where\u2019s this attitude coming from? Trying to get a promotion?"
-  - 'Friend 1: Maybe.'
-  - 'Friend 1: If you really want to impress him, grab him a sweet bun from the one
+  - 'Friend 3: Maybe.'
+  - 'Friend 2: If you really want to impress him, grab him a sweet bun from the one
     cafe downtown.'
-  - "Friend 1: That\u2019s true, he loves those."
+  - "You: That\u2019s true, he loves those."
   - "Friend 1: I didn\u2019t realize that my friends were such ass kissers."
-  - 'Friend 1: Yeah, yeah.'
-  - 'Friend 1: Yeah, yeah.'
+  - 'Friend 3: Yeah, yeah.'
   - "Friend 1: I\u2019m just teasing. If it gets you a raise, it gets you a raise.
     And God knows you\u2019ll need it."
-  - 'Friend 1: Especially if you want to impress th-'
+  - 'You: Especially if you want to impress th-'
   PassagesAfter:
   - "Friend 2: What the hell\u2026"
-  - "Friend 2: They\u2019re heading downtown."
-  - "Friend 2: You don\u2019t think they\u2019re going to the square all the way
-    downtown, are you?"
-  - 'Friend 2: It looks like it.are all the way downtown, are you?'
+  - "You: They\u2019re heading downtown."
+  - "Friend 3: You don\u2019t think they\u2019re going to the square, do you?"
   - 'Friend 2: It looks like it.'
-  - "Friend 2: Let\u2019s go after them."
-  - "Friend 2: Are you sure that\u2019s a good idea?"
+  - "Friend 1: Let\u2019s go after them."
+  - "Friend 3: Are you sure that\u2019s a good idea?"
   - 'Friend 2: It looked like the military.'
-  - "Friend 2: I want to know what\u2019s happening. We can leave if things get dangerous."
-  - "Friend 2: Agreed. Let\u2019s go."
+  - "You: I want to know what\u2019s happening. We can leave if things get dangerous."
+  - "Friend 1: Agreed. Let\u2019s go."
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   startDelayTime: 0
   timeBeforeButton: 1
