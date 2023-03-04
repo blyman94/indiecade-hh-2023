@@ -11,6 +11,7 @@ public class BikeDriving : MonoBehaviour
     [SerializeField]
     float verticalDampening = 1f;
     private float verticalInput;
+    private float completion = 25f;
 
     [SerializeField]
     Rigidbody rb;
@@ -41,8 +42,13 @@ public class BikeDriving : MonoBehaviour
         }
     }
 
-    public void slowDown()
+    public void slowDown(float slowAmount)
     {
+        
+    }
 
+    IEnumerator SlowPlayerDown()
+    {
+        yield return new WaitForSeconds(2);
     }
 }
