@@ -44,7 +44,16 @@ public class MovementCrowdScene : MonoBehaviour
 
     public bool Cinematic = false;
 
+    private float _currentSpeed;
+
     #region MonoBehaviour Methods
+    private void Start()
+    {
+        if (!Cinematic)
+        {
+            _position.Value = transform.position;
+        }
+    }
     private void FixedUpdate()
     {
         if (!Cinematic)
@@ -53,22 +62,19 @@ public class MovementCrowdScene : MonoBehaviour
 
             if (movement.sqrMagnitude > 0.0f)
             {
-                movement *= _acceleration;
-
-                // Clamp velocity to max speed
-                if (_rb.velocity.magnitude > _maxSpeed)
-                {
-                    _rb.velocity = _rb.velocity.normalized * _maxSpeed;
-                }
-
-                // Apply movement to rigidbody
-                _rb.AddForce(movement, ForceMode2D.Force);
+                _currentSpeed =
+                    Mathf.MoveTowards(_currentSpeed, _maxSpeed,
+                    _acceleration * Time.fixedDeltaTime);
             }
             else
             {
-                _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero,
-                    _deceleration * Time.deltaTime);
+                _currentSpeed =
+                    Mathf.MoveTowards(_currentSpeed, 0.0f,
+                    _deceleration * Time.fixedDeltaTime);
             }
+
+            _currentSpeed = Mathf.Clamp(_currentSpeed, 0f, _maxSpeed);
+            _rb.velocity = _moveInput.Value * _currentSpeed;
         }
     }
     private void Update()

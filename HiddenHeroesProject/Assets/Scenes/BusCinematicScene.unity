@@ -6820,6 +6820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2602392677524402676, guid: a8077e85121bef449843ccb064a9ca54, type: 3}
+      propertyPath: Cinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2868315006531473819, guid: a8077e85121bef449843ccb064a9ca54, type: 3}
       propertyPath: m_Name
       value: Friend
