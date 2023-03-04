@@ -6,9 +6,9 @@ public class DinnerSceneSequence : MonoBehaviour
 {
     public Animator TextPopupAnimator;
     public Animator NextButtonAnimator;
-    [TextArea(5,5)]
+    [TextArea(5, 5)]
     public string[] Passages;
-    [TextArea(5,5)]
+    [TextArea(5, 5)]
     public string[] PassagesAfter;
     public StringVariable CurrentDialogueString;
     public float startDelayTime = 0.0f;
@@ -18,6 +18,7 @@ public class DinnerSceneSequence : MonoBehaviour
     public float cameraShakeTime = 5.0f;
     public UIImageShake backgroundShaker;
     public GameEvent FadeOutSceneEvent;
+    public bool IsFirstScene = true;
 
     private void Start()
     {
@@ -45,24 +46,27 @@ public class DinnerSceneSequence : MonoBehaviour
             }
         }
 
-        NextButtonAnimator.Play("NextButton_Idle");
-        TextPopupAnimator.SetTrigger("Reset");
-        backgroundShaker.StartShake();
-        yield return new WaitForSeconds(cameraShakeTime);
-
-        foreach (string passage in PassagesAfter)
+        if (IsFirstScene)
         {
             NextButtonAnimator.Play("NextButton_Idle");
             TextPopupAnimator.SetTrigger("Reset");
-            yield return new WaitForSeconds(timeBeforeNextPassage);
-            CurrentDialogueString.Value = passage;
-            TextPopupAnimator.SetTrigger("FloatUp");
-            yield return new WaitForSeconds(timeBeforeButton);
-            NextButtonAnimator.Play("NextButton_FloatUp");
-            AwaitingPlayerInput = true;
-            while (AwaitingPlayerInput)
+            backgroundShaker.StartShake();
+            yield return new WaitForSeconds(cameraShakeTime);
+
+            foreach (string passage in PassagesAfter)
             {
-                yield return null;
+                NextButtonAnimator.Play("NextButton_Idle");
+                TextPopupAnimator.SetTrigger("Reset");
+                yield return new WaitForSeconds(timeBeforeNextPassage);
+                CurrentDialogueString.Value = passage;
+                TextPopupAnimator.SetTrigger("FloatUp");
+                yield return new WaitForSeconds(timeBeforeButton);
+                NextButtonAnimator.Play("NextButton_FloatUp");
+                AwaitingPlayerInput = true;
+                while (AwaitingPlayerInput)
+                {
+                    yield return null;
+                }
             }
         }
 
