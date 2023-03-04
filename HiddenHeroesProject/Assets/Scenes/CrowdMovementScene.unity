@@ -37049,7 +37049,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 2003749113}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 2003749113}
   m_Lens:
     FieldOfView: 34
@@ -55780,7 +55780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5225786982037007321, guid: 5544aef00662101408d7fec57eb3752c, type: 3}
       propertyPath: _acceleration
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5225786982078577376, guid: 5544aef00662101408d7fec57eb3752c, type: 3}
       propertyPath: m_RootOrder
