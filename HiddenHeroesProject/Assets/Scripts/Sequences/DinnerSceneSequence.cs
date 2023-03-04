@@ -17,6 +17,7 @@ public class DinnerSceneSequence : MonoBehaviour
     public bool AwaitingPlayerInput { get; set; } = false;
     public float cameraShakeTime = 5.0f;
     public UIImageShake backgroundShaker;
+    public GameEvent FadeOutSceneEvent;
 
     private void Start()
     {
@@ -67,5 +68,6 @@ public class DinnerSceneSequence : MonoBehaviour
 
         NextButtonAnimator.Play("NextButton_Idle");
         TextPopupAnimator.SetTrigger("Reset");
+        FadeOutSceneEvent?.Raise();
     }
 }
