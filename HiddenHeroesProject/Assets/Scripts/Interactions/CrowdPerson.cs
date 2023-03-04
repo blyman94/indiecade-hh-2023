@@ -66,10 +66,16 @@ public class CrowdPerson : MonoBehaviour
     /// </summary>
     private bool _isTouchingPlayer;
 
+    public bool IsRiotScene = false;
+
     #region MonoBehaviour Methods
     private void Start()
     {
         _startPosition = transform.position;
+        if (IsRiotScene)
+        {
+            MoveLeft();
+        }
     }
     private void FixedUpdate()
     {
@@ -106,32 +112,43 @@ public class CrowdPerson : MonoBehaviour
     }
     #endregion
 
+    public void MoveLeft()
+    {
+        _rb.velocity = Vector2.left * _maxSpeed;
+    }
+
     /// <summary>
     /// Uses AddForce to move this object back to it's start position, if it is
     /// moved away from its start position.
     /// </summary>
     private void RestoreStartPosition()
     {
-
-        // Check if the object has moved away from its start position
-        if (Vector2.Distance(transform.position, _startPosition) > restoreDistance)
+        if (!IsRiotScene)
         {
-            // Calculate the direction to move the object back to its start position
-            Vector2 direction = (_startPosition - (Vector2)transform.position).normalized;
-
-            // Clamp velocity to max speed
-            if (_rb.velocity.magnitude > _maxSpeed)
+            // Check if the object has moved away from its start position
+            if (Vector2.Distance(transform.position, _startPosition) > restoreDistance)
             {
-                _rb.velocity = _rb.velocity.normalized * _maxSpeed;
-            }
+                // Calculate the direction to move the object back to its start position
+                Vector2 direction = (_startPosition - (Vector2)transform.position).normalized;
 
-            // Apply a force to move the object in the calculated direction
-            _rb.AddForce(direction * _acceleration);
+                // Clamp velocity to max speed
+                if (_rb.velocity.magnitude > _maxSpeed)
+                {
+                    _rb.velocity = _rb.velocity.normalized * _maxSpeed;
+                }
+
+                // Apply a force to move the object in the calculated direction
+                _rb.AddForce(direction * _acceleration);
+            }
+            else
+            {
+                _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero,
+                    _deceleration * Time.deltaTime);
+            }
         }
         else
         {
-            _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero,
-                _deceleration * Time.deltaTime);
+            MoveLeft();
         }
     }
 
