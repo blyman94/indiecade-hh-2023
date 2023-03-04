@@ -11,7 +11,7 @@ public class BikeDriving : MonoBehaviour
     [SerializeField]
     float verticalDampening = 1f;
     private float verticalInput;
-    private float completion = 25f;
+    public static float completion = 30f;
 
     [SerializeField]
     Rigidbody rb;
