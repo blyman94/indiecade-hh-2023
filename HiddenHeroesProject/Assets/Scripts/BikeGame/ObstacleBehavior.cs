@@ -17,4 +17,13 @@ public class ObstacleBehavior : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            var player = other.GetComponent<BikeDriving>();
+            player.slowDown(slowdownAmount);
+        }
+    }
 }
