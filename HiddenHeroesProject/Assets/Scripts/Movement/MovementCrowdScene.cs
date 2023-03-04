@@ -42,33 +42,51 @@ public class MovementCrowdScene : MonoBehaviour
     [Tooltip("Vector2Variable to store position for this object.")]
     [SerializeField] private Vector2Variable _position;
 
+    public bool Cinematic = false;
+
     #region MonoBehaviour Methods
     private void FixedUpdate()
     {
-        Vector2 movement = _moveInput.Value;
-
-        if (movement.sqrMagnitude > 0.0f)
+        if (!Cinematic)
         {
-            movement *= _acceleration;
+            Vector2 movement = _moveInput.Value;
 
-            // Clamp velocity to max speed
-            if (_rb.velocity.magnitude > _maxSpeed)
+            if (movement.sqrMagnitude > 0.0f)
             {
-                _rb.velocity = _rb.velocity.normalized * _maxSpeed;
-            }
+                movement *= _acceleration;
 
-            // Apply movement to rigidbody
-            _rb.AddForce(movement, ForceMode2D.Force);
-        }
-        else
-        {
-            _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero,
-                _deceleration * Time.deltaTime);
+                // Clamp velocity to max speed
+                if (_rb.velocity.magnitude > _maxSpeed)
+                {
+                    _rb.velocity = _rb.velocity.normalized * _maxSpeed;
+                }
+
+                // Apply movement to rigidbody
+                _rb.AddForce(movement, ForceMode2D.Force);
+            }
+            else
+            {
+                _rb.velocity = Vector2.MoveTowards(_rb.velocity, Vector2.zero,
+                    _deceleration * Time.deltaTime);
+            }
         }
     }
     private void Update()
     {
-        _position.Value = transform.position;
+        if (!Cinematic)
+        {
+            _position.Value = transform.position;
+        }
     }
     #endregion 
+
+    public void MoveLeft()
+    {
+        _rb.velocity = Vector2.left * _maxSpeed;
+    }
+
+    public void Stop()
+    {
+        _rb.velocity = Vector2.zero;
+    }
 }
