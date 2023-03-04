@@ -17,13 +17,24 @@ public class BikeGameManager : MonoBehaviour
     public static float managerSpawnerDelay = 1f;
 
     public static bool isGameOver = false;
+
+    public static float minX;
+
+    
     
     // Start is called before the first frame update
     void Start()
     {
         managerSpeed = speed;
-        managerSpawnrate = spawnrate;
+        managerSpawnrate = 1/spawnrate;
         managerSpawnerDelay = spawnerSecondsDelay;
+
+        Camera cam = Camera.main;
+
+        float camHeight = 2f * cam.orthographicSize;
+        float camWidth = camHeight * cam.aspect;
+
+        minX = cam.transform.position.x - camWidth / 2f - 3;
     }
 
     // Update is called once per frame

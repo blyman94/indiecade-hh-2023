@@ -17,6 +17,10 @@ public class ObstacleBehavior : MonoBehaviour
     {
         Vector2 speed = new Vector2(-BikeGameManager.managerSpeed * Time.deltaTime * 3.3f, 0);
         transform.Translate(speed, Space.Self);
+        if (Mathf.Abs(transform.position.x) > Mathf.Abs(BikeGameManager.minX))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
