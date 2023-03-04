@@ -44,11 +44,6 @@ public class BikeDriving : MonoBehaviour
 
     public void slowDown(float slowAmount)
     {
-        
-    }
-
-    IEnumerator SlowPlayerDown()
-    {
-        yield return new WaitForSeconds(2);
+        completion -= slowAmount;
     }
 }
