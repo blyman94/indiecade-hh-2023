@@ -39,6 +39,12 @@ public class CrowdPerson : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
 
     /// <summary>
+    /// Collider of this object.
+    /// </summary>
+    [Tooltip("Collider of this object.")]
+    [SerializeField] private CircleCollider2D _collider;
+
+    /// <summary>
     /// Current move input of the player object.
     /// </summary>
     [Tooltip("Current move input of the player object.")]
@@ -56,11 +62,6 @@ public class CrowdPerson : MonoBehaviour
     private Vector2 _startPosition;
 
     /// <summary>
-    /// The position this object is trying to maintain. 
-    /// </summary>
-    private Vector2 _maintainPosition;
-
-    /// <summary>
     /// Is this object currently touching the player?
     /// </summary>
     private bool _isTouchingPlayer;
@@ -69,7 +70,6 @@ public class CrowdPerson : MonoBehaviour
     private void Start()
     {
         _startPosition = transform.position;
-        _maintainPosition = _startPosition;
     }
     private void FixedUpdate()
     {
@@ -99,15 +99,9 @@ public class CrowdPerson : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        if (Application.isPlaying)
-        {
-            Gizmos.DrawWireSphere(_maintainPosition, 0.1f);
-            Gizmos.DrawLine(transform.position, _maintainPosition);
-        }
-        else
-        {
-            Gizmos.DrawWireSphere(transform.position, 0.1f);
-        }
+        Gizmos.DrawWireSphere(transform.position, 0.1f);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere((Vector2)transform.position + _collider.offset, _collider.radius);
 
     }
     #endregion
@@ -118,13 +112,12 @@ public class CrowdPerson : MonoBehaviour
     /// </summary>
     private void RestoreStartPosition()
     {
-        _maintainPosition = new Vector2(transform.position.x, _startPosition.y);
 
         // Check if the object has moved away from its start position
-        if (Vector2.Distance(transform.position, _maintainPosition) > restoreDistance)
+        if (Vector2.Distance(transform.position, _startPosition) > restoreDistance)
         {
             // Calculate the direction to move the object back to its start position
-            Vector2 direction = (_maintainPosition - (Vector2)transform.position).normalized;
+            Vector2 direction = (_startPosition - (Vector2)transform.position).normalized;
 
             // Clamp velocity to max speed
             if (_rb.velocity.magnitude > _maxSpeed)

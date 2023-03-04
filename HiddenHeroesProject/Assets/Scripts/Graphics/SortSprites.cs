@@ -34,13 +34,13 @@ public class SortSprites : MonoBehaviour
         "the nature of the sorting algorithm (i.e. 5000).")]
     [SerializeField] private int _sortingOrderBase = 5000;
 
-    /// <summary>
-    /// Optional offset to add to the sorting layer. Useful for grouping 
-    /// together sprites that should be drawn over or below others.
-    /// </summary>
-    [Tooltip("Optional offset to add to the sorting layer. Useful for " + 
-        "grouping together sprites that should be drawn over or below others.")]
-    [SerializeField] private int _offset = 0;
+    // /// <summary>
+    // /// Optional offset to add to the sorting layer. Useful for grouping 
+    // /// together sprites that should be drawn over or below others.
+    // /// </summary>
+    // [Tooltip("Optional offset to add to the sorting layer. Useful for " + 
+    //     "grouping together sprites that should be drawn over or below others.")]
+    // [SerializeField] private int _offset = 0;
 
     #region MonoBehaviour Methods
     private void Awake()
@@ -51,7 +51,7 @@ public class SortSprites : MonoBehaviour
     private void LateUpdate()
     {
         _spriteRenderer.sortingOrder = 
-            (int)(_sortingOrderBase - _sortingPoint.position.y - _offset);
+            (int)(_sortingOrderBase - _sortingPoint.position.y * 100 + _sortingPoint.position.x);
     }
     #endregion
 }
