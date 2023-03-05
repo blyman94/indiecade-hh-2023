@@ -22,7 +22,36 @@ public class BikeDriving : MonoBehaviour
     float iFrameSeconds = 1f;
     private bool isInvincible = true;
     private float verticalInput;
-    public static float completion = 30f;
+
+    /*
+        Great work, Afraz!
+
+        Taksin - Here's a breakdown:
+
+        The following line used to read 
+
+            public static float completion = 30f
+
+        That means, that its a property of the class and not the instance of the
+        class. When the program first starts running, the static initializations
+        that you have here take place. They do not update when the scene is
+        reloaded. Therefore, the program set completion to 30 the first time, 
+        but as the player hits obstacles, completion decreases. When it was 
+        static, the script "remembered" the completion, and never reset it. 
+        Since completion is tied to the player's position, this caused the 
+        bug when the scene was reloaded.
+
+        The morale of the story? Try to avoid statics at all costs. There are 
+        very specific use cases for them that you will notice when you remove
+        them from your typical problem solving toolkit. I rarely use them 
+        specifically for this reason - they make it hard to track where bugs are 
+        coming from!
+
+        Another hotfix here would be to have completion reset to 30 in the Awake
+        function - that way you know it will be called in the first frame
+        whenever a scene containing it is loaded.
+    */
+    public float completion = 30f;
 
     private float idleTime = 0;
     private float bump = 1f; 
