@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class ScreenFader : MonoBehaviour
@@ -8,6 +9,7 @@ public class ScreenFader : MonoBehaviour
     public float fadeInTime = 1f;
     public float fadeOutTime = 1f;
     public float flickerInterval = 0.1f;
+    public UnityEvent RaiseAtEnd;
 
     public void StartFadeIn()
     {
@@ -42,6 +44,10 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 1f;
         image.color = color;
+        if (RaiseAtEnd != null)
+        {
+            RaiseAtEnd.Invoke();
+        }
     }
 
     public IEnumerator FadeOut()
@@ -73,5 +79,9 @@ public class ScreenFader : MonoBehaviour
             yield return new WaitForSeconds(flickerInterval);
         }
         image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
+        if (RaiseAtEnd != null)
+        {
+            RaiseAtEnd.Invoke();
+        }
     }
 }

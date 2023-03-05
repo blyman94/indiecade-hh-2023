@@ -12072,6 +12072,21 @@ MonoBehaviour:
   fadeInTime: 3
   fadeOutTime: 1
   flickerInterval: 0.07
+  RaiseAtEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0693ed799eb90934f9026fa7997ebe44, type: 2}
+        m_TargetAssemblyTypeName: ApplicationManager, Assembly-CSharp
+        m_MethodName: LoadSceneSingle
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2107998660
 MonoBehaviour:
   m_ObjectHideFlags: 0
