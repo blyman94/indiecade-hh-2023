@@ -16,26 +16,30 @@ public class DinnerSceneSequence : MonoBehaviour
     public float timeBeforeNextPassage = 1.0f;
     public bool AwaitingPlayerInput { get; set; } = false;
     public float cameraShakeTime = 5.0f;
-    public UIImageShake backgroundShaker;
+    public UIImageShake[] backgroundShakers;
     public GameEvent FadeOutSceneEvent;
     public bool IsFirstScene = true;
+    public Animator truckConvoyAnimator;
 
     private void Start()
     {
         StartCoroutine(DinnerSequenceRoutine());
-        backgroundShaker.shakeDuration = cameraShakeTime;
+        foreach (UIImageShake shaker in backgroundShakers)
+        {
+            shaker.shakeDuration = cameraShakeTime;
+        }
     }
 
     private IEnumerator DinnerSequenceRoutine()
     {
         yield return new WaitForSeconds(startDelayTime);
 
-        foreach (string passage in Passages)
+        for (int i = 0; i < Passages.Length; i++)
         {
             NextButtonAnimator.Play("NextButton_Idle");
             TextPopupAnimator.SetTrigger("Reset");
             yield return new WaitForSeconds(timeBeforeNextPassage);
-            CurrentDialogueString.Value = passage;
+            CurrentDialogueString.Value = Passages[i];
             TextPopupAnimator.SetTrigger("FloatUp");
             yield return new WaitForSeconds(timeBeforeButton);
             NextButtonAnimator.Play("NextButton_FloatUp");
@@ -50,7 +54,11 @@ public class DinnerSceneSequence : MonoBehaviour
         {
             NextButtonAnimator.Play("NextButton_Idle");
             TextPopupAnimator.SetTrigger("Reset");
-            backgroundShaker.StartShake();
+            truckConvoyAnimator.SetTrigger("MoveLeft");
+            foreach (UIImageShake shaker in backgroundShakers)
+            {
+                shaker.StartShake();
+            }
             yield return new WaitForSeconds(cameraShakeTime);
 
             foreach (string passage in PassagesAfter)
