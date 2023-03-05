@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NarrationScenes/AfterEpilogueScene.unity
     guid: f386d18528896cc4a8b6080db6ed96eb
+  - enabled: 1
+    path: Assets/Scenes/BikeGame1.unity
+    guid: 458ccb93bf1a12c4f87aed17ee3be06c
+  - enabled: 1
+    path: Assets/Scenes/BikeSceneLoss.unity
+    guid: 90ce908df42dd1e47aad6c9ce94d8bbd
   m_configObjects: {}
