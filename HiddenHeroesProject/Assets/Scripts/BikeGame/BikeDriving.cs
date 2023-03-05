@@ -18,6 +18,7 @@ public class BikeDriving : MonoBehaviour
     public static float completion = 30f;
 
     private float idleTime = 0;
+    private float bump = 1f; 
 
     [SerializeField]
     Rigidbody2D rb;
@@ -61,7 +62,7 @@ public class BikeDriving : MonoBehaviour
         Vector2 bikePos = new Vector2(newPos, transform.position.y);
         if (!Mathf.Approximately(transform.position.x, newPos))
         {
-            transform.position = Vector2.Lerp(transform.position, bikePos, Time.deltaTime);
+            transform.position = Vector2.Lerp(transform.position, bikePos, Time.deltaTime * bump);
         }
 
         if (!Input.GetButton("Vertical"))
@@ -93,5 +94,12 @@ public class BikeDriving : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    IEnumerator BumpMovement()
+    {
+        bump = 3f;
+        yield return new WaitForSeconds(0.5f);
+        bump = 1f;
     }
 }
