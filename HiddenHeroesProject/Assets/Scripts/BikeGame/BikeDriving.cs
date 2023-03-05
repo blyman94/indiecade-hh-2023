@@ -64,8 +64,9 @@ public class BikeDriving : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, bikePos, Time.deltaTime);
         }
 
-        if (rb.velocity.x < 0.5f)
+        if (!Input.GetButton("Vertical"))
         {
+            //Debug.Log("velocity " + rb.velocity.y);
             idleTime += Time.deltaTime;
         } else
         {
@@ -87,7 +88,7 @@ public class BikeDriving : MonoBehaviour
             if (idleTime > 1f)
             {
                 yield return new WaitForSeconds(0.5f);
-                completion += 1;
+                completion += 1 * Mathf.Log(idleTime/2 + 1);
             }
 
             yield return null;
