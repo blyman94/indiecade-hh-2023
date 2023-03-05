@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RiotEndScene.unity
     guid: 8fd7013830d4cca42a05b1fab7a58cb7
+  - enabled: 1
+    path: Assets/Scenes/BikeGame1.unity
+    guid: 458ccb93bf1a12c4f87aed17ee3be06c
+  - enabled: 1
+    path: Assets/Scenes/BikeSceneLoss.unity
+    guid: 284424e5c860f604297d618856fd76a9
   m_configObjects: {}

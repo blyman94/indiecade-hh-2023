@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class BikeDriving : MonoBehaviour
 {
+    [SerializeField] private GameEvent PlayerWinEvent;
+    [SerializeField] private GameEvent PlayerLoseEvent;
+
     [SerializeField]
     float maxVerticalSpeed = 5f;
     [SerializeField]
@@ -44,19 +47,42 @@ public class BikeDriving : MonoBehaviour
         StartCoroutine(Setup());
     }
 
+    /*
+        Ah yes, this is a classic usecase for my GameEvent class. Here, you are
+        checking every frame whether the loss condition has been met, and if it
+        has, you are alerting the game manager. This couples together the game
+        manager and the bike driving class, when their functionality should
+        really be separate. Instead, you could add two fields to this class:
+
+        [SerializeField] private GameEvent PlayerWinEvent;
+        [SerializeField] private GameEvent PlayerLoseEvent;
+
+        Replace 
+            gameMan.GetComponent<BikeGameManager>().LevelWin();
+        With 
+            PlayerWinEvent.Raise();
+        And Replace 
+            gameMan.GetComponent<BikeGameManager>().LevelLost();
+        With 
+            PlayerLoseEvent.Raise();
+        
+        Check the game manager class for what happens next!
+    */
     private void Update()
     {
         if (transform.position.x > goal.position.x && !BikeGameManager.isGameOver)
         {
             StopCoroutine(gainCoroutine);
             BikeGameManager.isGameOver = true;
-            gameMan.GetComponent<BikeGameManager>().LevelWin();
+            //gameMan.GetComponent<BikeGameManager>().LevelWin();
+            PlayerWinEvent.Raise();
         }
         if (transform.position.x < fail.position.x && !BikeGameManager.isGameOver && !isInvincible)
         {
             StopCoroutine(gainCoroutine);
             BikeGameManager.isGameOver = true;
-            gameMan.GetComponent<BikeGameManager>().LevelLost();
+            //gameMan.GetComponent<BikeGameManager>().LevelLost();
+            PlayerLoseEvent.Raise();
         }
     }
 
