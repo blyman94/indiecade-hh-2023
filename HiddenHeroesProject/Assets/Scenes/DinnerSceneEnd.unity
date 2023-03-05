@@ -307,6 +307,7 @@ MonoBehaviour:
   audioSource: {fileID: 1854385862}
   oneTimeSong: {fileID: 8300000, guid: 063fce06b05b3604094a821528b270fc, type: 3}
   repeatSong: {fileID: 8300000, guid: 94e8686fb747d8f4ca9b487e43388b37, type: 3}
+  timeOffset: -0.2
 --- !u!4 &81677038
 Transform:
   m_ObjectHideFlags: 0

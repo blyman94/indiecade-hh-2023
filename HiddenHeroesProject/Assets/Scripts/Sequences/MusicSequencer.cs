@@ -7,6 +7,7 @@ public class MusicSequencer : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip oneTimeSong;
     public AudioClip repeatSong;
+    public float timeOffset = -0.1f;
 
     public void Start()
     {
@@ -18,7 +19,7 @@ public class MusicSequencer : MonoBehaviour
 
     public IEnumerator WaitForSongToFinish()
     {
-        yield return new WaitForSeconds(oneTimeSong.length);
+        yield return new WaitForSeconds(oneTimeSong.length + timeOffset);
         audioSource.Stop();
         audioSource.loop = true;
         audioSource.clip = repeatSong;
