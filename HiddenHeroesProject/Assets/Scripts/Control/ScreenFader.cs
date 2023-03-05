@@ -10,6 +10,7 @@ public class ScreenFader : MonoBehaviour
     public float fadeOutTime = 1f;
     public float flickerInterval = 0.1f;
     public UnityEvent RaiseAtEnd;
+    public UnityEvent RaiseAtEndFadeOut;
 
     public void StartFadeIn()
     {
@@ -66,6 +67,11 @@ public class ScreenFader : MonoBehaviour
 
         color.a = 0f;
         image.color = color;
+
+        if (RaiseAtEndFadeOut != null)
+        {
+            RaiseAtEndFadeOut.Invoke();
+        }
     }
 
     private IEnumerator Flicker(int numFlickers)

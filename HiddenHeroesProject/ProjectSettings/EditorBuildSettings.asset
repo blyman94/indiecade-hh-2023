@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BusCinematicScene.unity
     guid: f5d4637fb3200b14397f731bfeec63e3
+  - enabled: 1
+    path: Assets/Scenes/RiotScene.unity
+    guid: 13ab8765b11cd76488531be08bece62c
+  - enabled: 1
+    path: Assets/Scenes/RiotSceneLoss.unity
+    guid: d8a48229202069844934f8cb680353cc
   m_configObjects: {}
