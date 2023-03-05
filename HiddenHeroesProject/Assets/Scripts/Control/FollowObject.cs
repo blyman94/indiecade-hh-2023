@@ -8,6 +8,11 @@ public class FollowObject : MonoBehaviour
     [SerializeField] private Rigidbody2D rb2d;
     public bool Cinematic = false;
 
+    private void Start()
+    {
+        rb2d.velocity = Vector2.zero;
+    }
+
     private void FixedUpdate()
     {
         if (!Cinematic)
