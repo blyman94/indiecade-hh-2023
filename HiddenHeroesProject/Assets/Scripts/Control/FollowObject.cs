@@ -30,4 +30,15 @@ public class FollowObject : MonoBehaviour
             }
         }
     }
+
+    public void MoveLeft()
+    {
+        Debug.Log("Called");
+        rb2d.velocity = Vector2.left * followSpeed;
+    }
+
+    public void Stop()
+    {
+        rb2d.velocity = Vector2.zero;
+    }
 }
