@@ -1092,7 +1092,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830867921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.68, y: 0, z: 0}
+  m_LocalPosition: {x: -11.2, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1119,6 +1119,10 @@ MonoBehaviour:
   goal: {fileID: 1371616604}
   fail: {fileID: 1454152481}
   iFrameSeconds: 1
+  completion: 30
+  timeBetweenGains: 0.25
+  logOffset: 1.5
+  completionMultiplier: 0.5
   rb: {fileID: 830867927}
   gameMan: {fileID: 1608327408}
 --- !u!50 &830867927
@@ -1896,7 +1900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454152479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.54, y: 6.46, z: 0}
+  m_LocalPosition: {x: -8.88, y: 6.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

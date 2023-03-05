@@ -52,7 +52,9 @@ public class BikeDriving : MonoBehaviour
         whenever a scene containing it is loaded.
     */
     public float completion = 30f;
-
+    public float timeBetweenGains = 0.5f;
+    public float logOffset = 2f;
+    public float completionMultiplier = 1f;
     private float idleTime = 0;
     private float bump = 1f; 
 
@@ -66,7 +68,7 @@ public class BikeDriving : MonoBehaviour
 
     private void Awake()
     {
-        //rb.constraints = RigidbodyConstraints.FreezePositionZ;
+        
         
     }
     private void Start()
@@ -168,11 +170,8 @@ public class BikeDriving : MonoBehaviour
     {
         while (!BikeGameManager.isGameOver)
         {
-            if (idleTime > 1f)
-            {
-                yield return new WaitForSeconds(0.5f);
-                completion += 1 * Mathf.Log(idleTime/2 + 1);
-            }
+            yield return new WaitForSeconds(timeBetweenGains);
+            completion += 1 * Mathf.Log(idleTime / 2 + logOffset) * completionMultiplier;
 
             yield return null;
         }
