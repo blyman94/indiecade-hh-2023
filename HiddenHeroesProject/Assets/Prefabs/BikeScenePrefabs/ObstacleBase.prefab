@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7557952243801296655}
   - component: {fileID: 390368337256431648}
+  - component: {fileID: -2444368644537415251}
   m_Layer: 0
   m_Name: ObstacleBase
   m_TagString: Untagged
@@ -45,7 +46,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca7f39bf6b606b49bb553e0d895f111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowdownAmount: 1
+  slowdownAmount: 10
+--- !u!58 &-2444368644537415251
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451229366609593307}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6
 --- !u!1 &4436165765773015808
 GameObject:
   m_ObjectHideFlags: 0
