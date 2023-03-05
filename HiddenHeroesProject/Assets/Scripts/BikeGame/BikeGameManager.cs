@@ -45,11 +45,13 @@ public class BikeGameManager : MonoBehaviour
 
     public void LevelWin()
     {
-
+        Debug.Log("You Win!");
+        //insert winning implementation here
     }
 
     public void LevelLost()
     {
-
+        Debug.Log("You Lost!");
+        //insert loosing implementation here
     }
 }

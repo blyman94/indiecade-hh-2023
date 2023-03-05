@@ -645,6 +645,7 @@ MonoBehaviour:
   verticalDampening: 2
   goal: {fileID: 1371616604}
   fail: {fileID: 1454152481}
+  iFrameSeconds: 1
   rb: {fileID: 830867927}
 --- !u!50 &830867927
 Rigidbody2D:
@@ -771,7 +772,7 @@ Transform:
   m_GameObject: {fileID: 874719332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 20, y: 11, z: 1}
+  m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

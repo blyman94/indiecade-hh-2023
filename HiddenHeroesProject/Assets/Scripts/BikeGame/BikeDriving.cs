@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,9 @@ public class BikeDriving : MonoBehaviour
     Transform goal;
     [SerializeField]
     Transform fail;
+    [SerializeField]
+    float iFrameSeconds = 1f;
+    private bool isInvincible = false;
     private float verticalInput;
     public static float completion = 30f;
 
@@ -23,7 +27,10 @@ public class BikeDriving : MonoBehaviour
     [SerializeField]
     Rigidbody2D rb;
 
-    IEnumerator myCoroutine;
+    [SerializeField]
+    GameObject gameMan;
+
+    IEnumerator gainCoroutine;
 
     private void Awake()
     {
@@ -32,8 +39,22 @@ public class BikeDriving : MonoBehaviour
     }
     private void Start()
     {
-        myCoroutine = GainGround();
-        StartCoroutine(myCoroutine);
+        gainCoroutine = GainGround();
+        StartCoroutine(gainCoroutine);
+    }
+
+    private void Update()
+    {
+        if (transform.position.x > goal.position.x)
+        {
+            StopCoroutine(gainCoroutine);
+            gameMan.GetComponent<BikeGameManager>().LevelWin();
+        }
+        if (transform.position.x < fail.position.x)
+        {
+            StopCoroutine(gainCoroutine);
+            gameMan.GetComponent<BikeGameManager>().LevelLost();
+        }
     }
 
     private void FixedUpdate()
@@ -77,9 +98,12 @@ public class BikeDriving : MonoBehaviour
 
     public void slowDown(float slowAmount)
     {
-        Debug.Log("slowdown!");
-        idleTime = 0;
-        completion -= slowAmount;
+        if (!isInvincible) 
+        {
+            StartCoroutine(BumpMovement());
+            idleTime = 0;
+            completion -= slowAmount; 
+        }
     }
 
     IEnumerator GainGround ()
@@ -98,8 +122,10 @@ public class BikeDriving : MonoBehaviour
 
     IEnumerator BumpMovement()
     {
+        isInvincible = true;
         bump = 3f;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(iFrameSeconds);
         bump = 1f;
+        isInvincible = false;
     }
 }
