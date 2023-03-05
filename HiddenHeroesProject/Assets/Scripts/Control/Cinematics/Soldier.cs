@@ -18,6 +18,11 @@ public class Soldier : MonoBehaviour
     [Tooltip("Rigidbody2d controlling the movement of this object.")]
     [SerializeField] private Rigidbody2D _rb;
 
+    public void MoveLeft()
+    {
+        _rb.velocity = Vector2.left * _maxSpeed;
+    }
+
     public void MoveRight()
     {
         _rb.velocity = Vector2.right * _maxSpeed;
@@ -32,6 +37,6 @@ public class Soldier : MonoBehaviour
     public void SetNewSpeed(float newSpeed)
     {
         Vector2 velDir = _rb.velocity.normalized;
-        _rb.velocity = velDir* newSpeed;
+        _rb.velocity = velDir * newSpeed;
     }
 }

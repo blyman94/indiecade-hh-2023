@@ -53,6 +53,10 @@ public class MovementCrowdScene : MonoBehaviour
         {
             _position.Value = transform.position;
         }
+        if (Cinematic)
+        {
+            Stop();
+        }
     }
     private void FixedUpdate()
     {
@@ -79,7 +83,7 @@ public class MovementCrowdScene : MonoBehaviour
     }
     private void Update()
     {
-        if (!Cinematic)
+        if (_position != null)
         {
             _position.Value = transform.position;
         }

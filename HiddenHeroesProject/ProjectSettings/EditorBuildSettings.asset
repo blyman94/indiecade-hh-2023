@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RiotSceneLoss.unity
     guid: d8a48229202069844934f8cb680353cc
+  - enabled: 1
+    path: Assets/Scenes/RiotEndScene.unity
+    guid: 8fd7013830d4cca42a05b1fab7a58cb7
   m_configObjects: {}

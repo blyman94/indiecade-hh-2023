@@ -12,6 +12,11 @@ public class RiotRunnerSpawner : MonoBehaviour
         InvokeRepeating("SpawnPrefab", 0f, 1f / spawnRate);
     }
 
+    public void Stop()
+    {
+        CancelInvoke();
+    }
+
     private void SpawnPrefab()
     {
         // Calculate a random y position between the minYPosition and maxYPosition
