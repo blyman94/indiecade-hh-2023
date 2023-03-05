@@ -34,7 +34,7 @@ public class BikeGameManager : MonoBehaviour
         float camHeight = 2f * cam.orthographicSize;
         float camWidth = camHeight * cam.aspect;
 
-        minX = cam.transform.position.x - camWidth / 2f - 3;
+        minX = cam.transform.position.x - camWidth / 2f - 10;
     }
 
     // Update is called once per frame

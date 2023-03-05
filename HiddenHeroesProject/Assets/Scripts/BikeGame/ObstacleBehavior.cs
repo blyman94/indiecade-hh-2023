@@ -23,12 +23,15 @@ public class ObstacleBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("obstacle triggered");
         if (other.CompareTag("Player"))
         {
             var player = other.GetComponent<BikeDriving>();
             player.slowDown(slowdownAmount);
+
         }
     }
+   
 }
