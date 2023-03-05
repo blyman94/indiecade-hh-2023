@@ -17,7 +17,7 @@ public class BikeDriving : MonoBehaviour
     Transform fail;
     [SerializeField]
     float iFrameSeconds = 1f;
-    private bool isInvincible = false;
+    private bool isInvincible = true;
     private float verticalInput;
     public static float completion = 30f;
 
@@ -41,18 +41,21 @@ public class BikeDriving : MonoBehaviour
     {
         gainCoroutine = GainGround();
         StartCoroutine(gainCoroutine);
+        StartCoroutine(Setup());
     }
 
     private void Update()
     {
-        if (transform.position.x > goal.position.x)
+        if (transform.position.x > goal.position.x && !BikeGameManager.isGameOver)
         {
             StopCoroutine(gainCoroutine);
+            BikeGameManager.isGameOver = true;
             gameMan.GetComponent<BikeGameManager>().LevelWin();
         }
-        if (transform.position.x < fail.position.x)
+        if (transform.position.x < fail.position.x && !BikeGameManager.isGameOver && !isInvincible)
         {
             StopCoroutine(gainCoroutine);
+            BikeGameManager.isGameOver = true;
             gameMan.GetComponent<BikeGameManager>().LevelLost();
         }
     }
@@ -86,7 +89,7 @@ public class BikeDriving : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, bikePos, Time.deltaTime * bump);
         }
 
-        if (!Input.GetButton("Vertical"))
+        if (!Input.GetButton("Vertical") && !isInvincible)
         {
             //Debug.Log("velocity " + rb.velocity.y);
             idleTime += Time.deltaTime;
@@ -125,6 +128,15 @@ public class BikeDriving : MonoBehaviour
         isInvincible = true;
         bump = 3f;
         yield return new WaitForSeconds(iFrameSeconds);
+        bump = 1f;
+        isInvincible = false;
+    }
+
+    IEnumerator Setup()
+    {
+        bump = 0.5f;
+        isInvincible = true;
+        yield return new WaitForSeconds(6f);
         bump = 1f;
         isInvincible = false;
     }
