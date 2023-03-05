@@ -4753,7 +4753,7 @@ MonoBehaviour:
   - '<b>Lead Protestor: So, if you stay through the night: I must warn you.</b>'
   - '<b>Lead Protestor: Leave now or we will all die!</b>'
   - 'You: We have to leave. Probably should head back the way we came.'
-  - "Friend 1: Yeah, let\u2019s go."
+  - "Zhao: Yeah, let\u2019s go."
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   timeBeforeNextPassage: 5
   RaiseAtEnd: {fileID: 11400000, guid: 4f081eec2cd8c5c4e9cfa38d6d52daa5, type: 2}

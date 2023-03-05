@@ -2049,60 +2049,60 @@ MonoBehaviour:
   TextPopupAnimator: {fileID: 30682970}
   NextButtonAnimator: {fileID: 1008163884}
   Passages:
-  - 'Friend 3: I was thinking of seeing my grandmother this weekend.'
-  - 'Friend 1: Yeah?'
+  - 'Sun: I was thinking of seeing my grandmother this weekend.'
+  - 'Zhao: Yeah?'
   - 'You: Tell her I said hi.'
-  - 'Friend 3: I will. She said she''s been running out of cooking supplies recently.
+  - 'Sun: I will. She said she''s been running out of cooking supplies recently.
     I''ll have to bring her some.'
-  - 'Friend 2: Yeah. My neighbor came knocking on my door again asking for ingredients
+  - 'Chen: Yeah. My neighbor came knocking on my door again asking for ingredients
     last night. I don''t know how much longer I can keep letting her have my flour.'
-  - "Friend 3: I heard there\u2019s people setting up a food drive downtown in a
-    few weeks. Maybe you can tell her to go there?"
-  - 'Friend 2: Downtown? Where the protests are happening?'
-  - 'Friend 1: Yeah, I go there all the time. Just keep your head down.'
-  - "Friend 2: Maybe, but it\u2019s still risky."
-  - "Friend 1: They\u2019re not after us anyway. They\u2019re too busy with the students."
-  - 'Friend 3: I heard the students are negotiating now.'
-  - 'Friend 2: Oh? And how would you know?'
-  - "Friend 1: Apparently he\u2019s got little birds on his shoulders telling him."
-  - 'Friend 2: Can they also tell us when the next market sale is happening?'
-  - 'Friend 3: Hey, I just know people who live downtown, who are protesting. If
-    you guys worked further into the city, you would hear this stuff, too.'
+  - "Sun: I heard there\u2019s people setting up a food drive downtown in a few weeks.
+    Maybe you can tell her to go there?"
+  - 'Chen: Downtown? Where the protests are happening?'
+  - 'Zhao: Yeah, I go there all the time. Just keep your head down.'
+  - "Chen: Maybe, but it\u2019s still risky."
+  - "Zhao: They\u2019re not after us anyway. They\u2019re too busy with the students."
+  - 'Sun: I heard the students are negotiating now.'
+  - 'Chen: Oh? And how would you know?'
+  - "Zhao: Apparently he\u2019s got little birds on his shoulders telling him."
+  - 'Chen: Can they also tell us when the next market sale is happening?'
+  - 'Sun: Hey, I just know people who live downtown, who are protesting. If you guys
+    worked further into the city, you would hear this stuff, too.'
   - 'You: I have been hearing similar things. Negotiations, I mean.'
-  - "Friend 2: What is there to talk about? They have to be one-sided, don\u2019t
-    you think?"
-  - "Friend 3: There\u2019s got to be some sort of solution..."
-  - 'Friend 3: ...right?'
-  - 'Friend 1: Whatever the solution is, those people in the square are putting up
-    one hell of a sit-in.'
-  - "Friend 3: They\u2019re not eating, even."
-  - 'Friend 1: More food for us, I suppose.'
+  - "Chen: What is there to talk about? They have to be one-sided, don\u2019t you
+    think?"
+  - "Sun: There\u2019s got to be some sort of solution..."
+  - 'Sun: ...right?'
+  - 'Zhao: Whatever the solution is, those people in the square are putting up one
+    hell of a sit-in.'
+  - "Sun: They\u2019re not eating, even."
+  - 'Zhao: More food for us, I suppose.'
   - 'You: Speaking of which, this food is great. We should come here more often.'
-  - 'Friend 1: Agreed. Same time, tomorrow?'
-  - 'Friend 2: Works for me.'
-  - "Friend 3: I might run a bit late, but I\u2019ll be here."
-  - 'Friend 2: The boss is making you work late again?'
-  - "Friend 3: He\u2019s not making me. I\u2019m doing it of my own free will."
-  - "Friend 1: Wow, where\u2019s this attitude coming from? Trying to get a promotion?"
-  - 'Friend 3: Maybe.'
-  - 'Friend 2: If you really want to impress him, grab him a sweet bun from the one
-    cafe downtown.'
+  - 'Zhao: Agreed. Same time, tomorrow?'
+  - 'Chen: Works for me.'
+  - "Sun: I might run a bit late, but I\u2019ll be here."
+  - 'Chen: The boss is making you work late again?'
+  - "Sun: He\u2019s not making me. I\u2019m doing it of my own free will."
+  - "Zhao: Wow, where\u2019s this attitude coming from? Trying to get a promotion?"
+  - 'Sun: Maybe.'
+  - 'Chen: If you really want to impress him, grab him a sweet bun from the one cafe
+    downtown.'
   - "You: That\u2019s true, he loves those."
-  - "Friend 1: I didn\u2019t realize that my friends were such ass kissers."
-  - 'Friend 3: Yeah, yeah.'
-  - "Friend 1: I\u2019m just teasing. If it gets you a raise, it gets you a raise.
-    And God knows you\u2019ll need it."
+  - "Zhao: I didn\u2019t realize that my friends were such ass kissers."
+  - 'Sun: Yeah, yeah.'
+  - "Zhao: I\u2019m just teasing. If it gets you a raise, it gets you a raise. And
+    God knows you\u2019ll need it."
   - 'You: Especially if you want to impress th-'
   PassagesAfter:
-  - "Friend 2: What the hell\u2026"
+  - "Chen: What the hell\u2026"
   - "You: They\u2019re heading downtown."
-  - "Friend 3: You don\u2019t think they\u2019re going to the square, do you?"
-  - 'Friend 2: It looks like it.'
-  - "Friend 1: Let\u2019s go after them."
-  - "Friend 3: Are you sure that\u2019s a good idea?"
-  - 'Friend 2: It looked like the military.'
+  - "Sun: You don\u2019t think they\u2019re going to the square, do you?"
+  - 'Chen: It looks like it.'
+  - "Zhao: Let\u2019s go after them."
+  - "Sun: Are you sure that\u2019s a good idea?"
+  - 'Chen: It looked like the military.'
   - "You: I want to know what\u2019s happening. We can leave if things get dangerous."
-  - "Friend 1: Agreed. Let\u2019s go."
+  - "Zhao: Agreed. Let\u2019s go."
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   startDelayTime: 4
   timeBeforeButton: 1
