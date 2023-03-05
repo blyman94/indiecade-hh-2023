@@ -12,9 +12,6 @@ public class CrowdSceneTextSequence : MonoBehaviour
     public GameEvent RaiseAtEnd;
     public GameEvent RaiseInMiddleA;
     public GameEvent RaiseInMiddleB;
-    private bool haveRaisedA = false;
-    private bool haveRaisedB = false;
-
 
     public void StartSeqeunce()
     {
