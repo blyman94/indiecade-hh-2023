@@ -366,8 +366,8 @@ MonoBehaviour:
     the wounded and shot had been sent to the hospitals by residents. Some of then
     died there.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
-  m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
+  m_sharedMaterial: {fileID: -8018193265496262720, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

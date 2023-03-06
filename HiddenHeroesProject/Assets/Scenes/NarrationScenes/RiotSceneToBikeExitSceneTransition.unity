@@ -361,14 +361,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: They sent a couple of students to negotiate. After a while, they said "We
+  m_text: They sent a couple students to negotiate. After a while, they said "We
     need to leave, otherwise we'll all die. It doesn't make send to hold our ground.
     They won't arrest us, they'll kill us." Right as they were saying this there
     was this "peng peng peng" sound, and then suddenly there was nothing. I didn't
     realize until later that the speaker had been shot out.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
-  m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
+  m_sharedMaterial: {fileID: -8018193265496262720, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

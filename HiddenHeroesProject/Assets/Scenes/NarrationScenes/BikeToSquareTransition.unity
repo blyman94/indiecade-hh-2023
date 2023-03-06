@@ -369,8 +369,8 @@ MonoBehaviour:
     kept moving forward looking for the start of the convoy. It lasted for several
     miles.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
-  m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
+  m_sharedMaterial: {fileID: -8018193265496262720, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -394,8 +394,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.8
-  m_fontSizeBase: 56.8
+  m_fontSize: 52
+  m_fontSizeBase: 52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
