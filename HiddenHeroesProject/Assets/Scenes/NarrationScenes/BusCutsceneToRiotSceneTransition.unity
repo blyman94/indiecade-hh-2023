@@ -363,8 +363,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: All of sudden [the soldiers] surged forward and I could see in the distance
     batons being waved. All of a sudden the crowd dispersed and the soldiers blew
-    through. In the blink of an eye, the busses blocking the road have been moved
-    aside. Very fast! Just like that!
+    through. In the blink of an eye the busses blocking the road has been moved aside.
+    Very fast! Just like that!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
