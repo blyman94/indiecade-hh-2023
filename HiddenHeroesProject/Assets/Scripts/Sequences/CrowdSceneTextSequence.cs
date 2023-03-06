@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CrowdSceneTextSequence : MonoBehaviour
 {
+    public AudioSource SwooshAudio;
+    public AudioClip SwooshClip;
     public Animator TextPopupAnimator;
     [TextArea(5, 5)]
     public string[] Passages;
@@ -25,6 +27,7 @@ public class CrowdSceneTextSequence : MonoBehaviour
             TextPopupAnimator.SetTrigger("Reset");
             CurrentDialogueString.Value = Passages[i];
             TextPopupAnimator.SetTrigger("FloatUp");
+            SwooshAudio.PlayOneShot(SwooshClip);
             yield return new WaitForSeconds(timeBeforeNextPassage);
             if (i == 2 && RaiseInMiddleA != null)
             {
