@@ -8,16 +8,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1863459748, guid: 141d9e78eba075949b31188724792d46, type: 3}
+    - target: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
       propertyPath: m_Color.b
-      value: 0.6117647
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
       propertyPath: m_Color.g
-      value: 0.3647059
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
       propertyPath: m_Color.r
-      value: 0.91372555
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 5187948550948661236, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
       propertyPath: m_Mass
@@ -71,5 +79,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrowdPersonHeavy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5039360381876407922, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
+--- !u!212 &597476128407194618 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5187948550892800838, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
+  m_PrefabInstance: {fileID: 5743746385095377084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &597476128479209287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5187948550948661243, guid: adee98fc3d44cb342a9abab63de88f7a, type: 3}
+  m_PrefabInstance: {fileID: 5743746385095377084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8796459294011380498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597476128479209287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd25fa93877b0af49b49098f5e7872fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -1863459748, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  - {fileID: 1480523629, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  - {fileID: -1145649761, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  RandomLeftRight: 1
+  spriteRenderer: {fileID: 597476128407194618}
+  FaceLeft: 0
