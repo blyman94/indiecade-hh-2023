@@ -361,12 +361,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Then we got on our bikes and started going back out. At this point, the
+  m_text: 'Then we got on our bikes and started going back out. At this point the
     city looked completely different from last night. The streets were filled with
     debris and even the electric poles were knocked down. And the big wide street
     in front was filled with parked bikes that were flattened by the tanks. And the
     night before there was a fight outside, and you could see military vehicles like
-    trucks and tanks burned on the side of the road, still smoking.
+    the trucks and tanks burned on the side of the road, still smoking. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
