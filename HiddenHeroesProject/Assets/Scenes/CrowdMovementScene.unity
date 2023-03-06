@@ -7425,8 +7425,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
+  m_sharedMaterial: {fileID: -8018193265496262720, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -31394,8 +31394,8 @@ MonoBehaviour:
   SwooshClip: {fileID: 8300000, guid: bb7598811faa8234faf15db284b1f940, type: 3}
   TextPopupAnimator: {fileID: 1614322216}
   Passages:
-  - "Protestor: We can't let ourselves be intimidated by them! Don't leave the square,
-    it\u2019s just empty threats!"
+  - 'Protestor: We can''t let ourselves be intimidated by them! Don''t leave the
+    square, it''s just empty threats!'
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   timeBeforeNextPassage: 10
   RaiseAtEnd: {fileID: 0}
