@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b251f3f2b60c64f4187d966e472be2da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitDuration: 5.35
+  waitDuration: 4.5
   gameEvent: {fileID: 11400000, guid: 9e033d6cf145b0b428e4c74408c6c35f, type: 2}
 --- !u!4 &107072568
 Transform:
