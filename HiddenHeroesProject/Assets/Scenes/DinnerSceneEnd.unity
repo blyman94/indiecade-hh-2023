@@ -1113,46 +1113,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextPopupAnimator: {fileID: 1923322217}
   Passages:
-  - 'Chen: The news reported several students dead.'
-  - "Zhao: Yeah, there were a lot of gunshots. I\u2019d be surprised if everyone
-    was okay."
-  - 'Sun: I saw someone come out of their apartment building and try to attack a
-    soldier. I wonder if any of the dead people are soldiers.'
-  - 'Zhao: Probably. The protestors were definitely passionate.'
-  - 'You: There were some people who refused to leave.'
-  - 'Chen: They were probably arrested. Or killed.'
-  - 'You: Yeah. I wonder if that one person ever found her sister.'
-  - 'Sun: I hope so.'
-  - "Zhao: Hey, I just noticed, you weren\u2019t late to dinner today. You decided
-    not to schmooze?"
+  - "Sun: People are saying that a lot of students died last night.\r"
+  - "Zhao: Yeah, there were a lot of gunshots. I'd be surprised if everyone was okay.\r"
+  - "Sun: I saw someone come out of their apartment building and try to attack a
+    soldier.\r"
+  - "Sun: I wonder if any of the dead people are soldiers.\r"
+  - 'Zhao: Probably. Some of those students were not going away without a fight.'
+  - "You: There were some people who refused to leave.\r"
+  - "Chen: They were probably killed. Or arrested if they were lucky.\r"
+  - "You: Yeah. I wonder if that one person ever found her sister.\r"
+  - "Sun: I hope so.\r"
+  - 'Zhao: Hey, I just noticed, you weren''t late to dinner today. You decided not
+    to schmooze?'
   - 'Sun: Doing someone a favor is not schmoozing.'
-  - 'Zhao: You were only doing it in hopes of getting a raise.'
+  - "Zhao: You were only doing it in hopes of getting a raise.\r"
   - 'Sun: I never said that.'
-  - "Zhao: You didn\u2019t have to. No one would ever get their boss food out of
-    pure generosity. Especially him. He\u2019s a man only a mother could love."
-  - 'Sun: The cafe was closed.'
-  - "Zhao: You\u2019re not denying that you were trying to schmooze."
-  - 'Sun: Would you stop saying schmooze?'
-  - 'Chen: Wait, wait. The cafe was closed?'
-  - 'Sun: Yeah, they said they had to make some repairs today.'
-  - 'You: At least this place is open.'
-  - "Zhao: Yeah, or else we\u2019d have to have dinner at your house. And no one
-    wants that."
-  - "Chen: I have to head out soon, I\u2019m working overtime tomorrow."
-  - 'You: Really?'
-  - "Chen: Yeah, there\u2019s blackouts on the East side of the city. We need things
-    up and running again as soon as possible."
-  - "Zhao: Yeah, I\u2019ve got a long day of work cut out for me tomorrow, too. Not
-    much got done today."
-  - "Sun: Yeah, I was too exhausted from last night. But I\u2019m not really tired
-    right now, which is weird. I guess I\u2019m just more hungry than tired."
-  - "Zhao: Not me. I\u2019m heading out. I need sleep."
-  - 'Sun: Bye.'
-  - "Chen: I\u2019m coming with you."
-  - "You: I\u2019ll head out, too. Bye everyone!"
+  - 'Zhao: You didn''t have to. No one would ever get their boss food out of pure
+    generosity.'
+  - 'Zhao: Especially him. He''s a man only a mother could love.'
+  - "Sun: The cafe was closed.\r"
+  - "Zhao: You're not denying that you were trying to schmooze.\r"
+  - "Sun: Would you stop saying schmooze?\r"
+  - "Chen: Wait, wait. Sun, the cafe was closed?\r"
+  - "Sun: Yeah, they said they had to make some repairs today.\r"
+  - "You: At least this place is open.\r"
+  - "Zhao: Yeah, or else we'd have to have dinner at your house.\r"
+  - 'Zhao: And no one wants that.'
+  - 'Chen: I have to head out soon, I''m working overtime tomorrow.'
+  - "You: Really?\r"
+  - "Chen: Yeah, there's blackouts on the East side of the city.\r"
+  - 'Chen: We need things up and running again as soon as possible.'
+  - 'Zhao: Yeah, I''ve got a long day of work cut out for me tomorrow, too.'
+  - 'Zhao: Not much got done today.'
+  - "Sun: Yeah, I was too exhausted from last night.\r"
+  - 'Sun: But I''m not really tired right now, which is weird. I guess I''m just
+    more hungry than tired.'
+  - "Zhao: Not me. I'm heading out. I need sleep.\r"
+  - "Sun: See you.\r"
+  - "Chen: I'm coming with you.\r"
+  - "You: I'll head out, too. Bye everyone!\r"
   - 'Zhao: See you tomorrow!'
-  - 'Sun: Get some rest!'
-  - 'You: You too.'
+  - "Sun: Get some rest!\r"
+  - "You: You too.\r"
   PassagesAfter: []
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   startDelayTime: 0
@@ -1218,8 +1220,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Chen: The news reported several students dead.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
+  m_sharedMaterial: {fileID: -8018193265496262720, guid: ad33ff8c8bdedbf42a1914110d1be527, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1243,8 +1245,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
