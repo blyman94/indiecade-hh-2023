@@ -21,7 +21,7 @@ public class DinnerSceneSequence : MonoBehaviour
     public bool IsFirstScene = true;
     public Animator truckConvoyAnimator;
 
-    private void Start()
+    public void StartDinnerSequence()
     {
         StartCoroutine(DinnerSequenceRoutine());
         foreach (UIImageShake shaker in backgroundShakers)

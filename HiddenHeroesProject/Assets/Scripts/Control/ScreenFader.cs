@@ -22,6 +22,11 @@ public class ScreenFader : MonoBehaviour
         StartCoroutine(FadeOut());
     }
 
+    public void StartFadeOut(bool ok)
+    {
+        StartCoroutine(FadeOut(ok));
+    }
+
     public void StartFlickerEffect(int numFlickers)
     {
         StartCoroutine(Flicker(numFlickers));
@@ -48,6 +53,31 @@ public class ScreenFader : MonoBehaviour
         if (RaiseAtEnd != null)
         {
             RaiseAtEnd.Invoke();
+        }
+    }
+
+    public IEnumerator FadeOut(bool startAt)
+    {
+        float elapsedTime = 0f;
+        Color startColor;
+        Color color = image.color;
+        startColor = image.color;
+
+        while (elapsedTime < fadeOutTime)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(startColor.a, 0f, elapsedTime / fadeOutTime);
+            color.a = alpha;
+            image.color = color;
+            yield return null;
+        }
+
+        color.a = 0f;
+        image.color = color;
+
+        if (RaiseAtEndFadeOut != null)
+        {
+            RaiseAtEndFadeOut.Invoke();
         }
     }
 
