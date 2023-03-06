@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4661567700785617052}
   - component: {fileID: 4661567700785617055}
   - component: {fileID: 773107630545389409}
-  - component: {fileID: 4801148404260314539}
+  - component: {fileID: 2145995281880921084}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -169,8 +169,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 1, g: 0.9843137, b: 0, a: 1}
+  m_Sprite: {fileID: -1863459748, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   _sortingPoint: {fileID: 945939630885454051}
   _sortingLayerName: Default
   _sortingOrderBase: 5000
---- !u!114 &4801148404260314539
+--- !u!114 &2145995281880921084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,12 +205,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4661567700785617053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 199243eecf49c4748bc4c37092f1cbd9, type: 3}
+  m_Script: {fileID: 11500000, guid: bd25fa93877b0af49b49098f5e7872fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 4661567700785617055}
-  _saturationMin: 0.2
-  _saturationMax: 1
+  sprites:
+  - {fileID: -1863459748, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  - {fileID: 1480523629, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  - {fileID: -1145649761, guid: 141d9e78eba075949b31188724792d46, type: 3}
+  RandomLeftRight: 0
+  spriteRenderer: {fileID: 4661567700785617055}
+  FaceLeft: 1
 --- !u!1 &4916058421650224066
 GameObject:
   m_ObjectHideFlags: 0

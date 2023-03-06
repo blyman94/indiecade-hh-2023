@@ -23,6 +23,9 @@ public class MovementCrowdScene : MonoBehaviour
     [Tooltip("At which rate does this object approach 0 speed?")]
     [SerializeField] private float _deceleration = 2.5f;
 
+    public Animator PlayerAnimator;
+    public SpriteRenderer playerSpriteRenderer;
+
     /// <summary>
     /// Rigidbody2D of the object being moved.
     /// </summary>
@@ -43,10 +46,19 @@ public class MovementCrowdScene : MonoBehaviour
     [SerializeField] private Vector2Variable _position;
 
     public bool Cinematic = false;
+    public bool NoReallyFaceRight;
 
     private float _currentSpeed;
 
     #region MonoBehaviour Methods
+    private void OnEnable()
+    {
+        _moveInput.VariableUpdated += StartWalkAnim;
+    }
+    private void OnDisable()
+    {
+        _moveInput.VariableUpdated -= StartWalkAnim;
+    }
     private void Start()
     {
         if (!Cinematic)
@@ -57,12 +69,34 @@ public class MovementCrowdScene : MonoBehaviour
         {
             Stop();
         }
+        playerSpriteRenderer.flipX = true;
+
+        if (Cinematic)
+        {
+            playerSpriteRenderer.flipX = false;
+            if (NoReallyFaceRight)
+            {
+                playerSpriteRenderer.flipX = true;
+            }
+        }
     }
     private void FixedUpdate()
     {
         if (!Cinematic)
         {
             Vector2 movement = _moveInput.Value;
+
+            if (movement != Vector2.zero)
+            {
+                if (movement.x >= 0)
+                {
+                    playerSpriteRenderer.flipX = true;
+                }
+                else
+                {
+                    playerSpriteRenderer.flipX = false;
+                }
+            }
 
             if (movement.sqrMagnitude > 0.0f)
             {
@@ -80,6 +114,17 @@ public class MovementCrowdScene : MonoBehaviour
             _currentSpeed = Mathf.Clamp(_currentSpeed, 0f, _maxSpeed);
             _rb.velocity = _moveInput.Value * _currentSpeed;
         }
+        else
+        {
+            if (_rb.velocity.x < 0.0f)
+            {
+                PlayerAnimator.SetBool("IsWalking", true);
+            }
+            else
+            {
+                PlayerAnimator.SetBool("IsWalking", false);
+            }
+        }
     }
     private void Update()
     {
@@ -90,13 +135,27 @@ public class MovementCrowdScene : MonoBehaviour
     }
     #endregion 
 
+    private void StartWalkAnim()
+    {
+        if (_moveInput.Value.magnitude > 0.0f)
+        {
+            PlayerAnimator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            PlayerAnimator.SetBool("IsWalking", false);
+        }
+    }
+
     public void MoveLeft()
     {
+        playerSpriteRenderer.flipX = false;
         _rb.velocity = Vector2.left * _maxSpeed;
     }
 
     public void Stop()
     {
         _rb.velocity = Vector2.zero;
+        PlayerAnimator.SetBool("IsWalking", false);
     }
 }

@@ -155,7 +155,6 @@ GameObject:
   - component: {fileID: 5266168215538406979}
   - component: {fileID: 5266168215538406976}
   - component: {fileID: 224800083870288318}
-  - component: {fileID: 5405757981390459764}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -220,9 +219,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.31863979, g: 0.46226418, b: 0.16862465, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: 9ceab7440d8153c4f87aca2ffc722c44, type: 3}
+  m_Color: {r: 0.48943046, g: 0.8301887, b: 0.34069067, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -247,21 +246,6 @@ MonoBehaviour:
   _sortingPoint: {fileID: 325561141482229308}
   _sortingLayerName: Default
   _sortingOrderBase: 5000
---- !u!114 &5405757981390459764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5266168215538406978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 199243eecf49c4748bc4c37092f1cbd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 5266168215538406976}
-  _saturationMin: 0.2
-  _saturationMax: 1
 --- !u!1 &5592729810487688477
 GameObject:
   m_ObjectHideFlags: 0

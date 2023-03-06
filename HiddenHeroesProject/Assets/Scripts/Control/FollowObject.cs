@@ -7,10 +7,14 @@ public class FollowObject : MonoBehaviour
     public float stopDistance = 0.1f;
     [SerializeField] private Rigidbody2D rb2d;
     public bool Cinematic = false;
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
+    public bool literallyAnything = false;
 
     private void Start()
     {
         rb2d.velocity = Vector2.zero;
+        
     }
 
     private void FixedUpdate()
@@ -28,6 +32,29 @@ public class FollowObject : MonoBehaviour
             {
                 rb2d.velocity = Vector2.zero;
             }
+        }
+
+        if (rb2d.velocity.x >= 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        if (rb2d.velocity.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if (literallyAnything)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if (rb2d.velocity.magnitude > 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 

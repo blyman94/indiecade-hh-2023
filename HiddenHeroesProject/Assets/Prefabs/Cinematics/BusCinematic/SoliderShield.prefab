@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4785803854221747572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.683, y: 0, z: 0}
+  m_LocalPosition: {x: -0.364, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -147,7 +147,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoliderShield
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5266168215538406976, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266168215538406976, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ceab7440d8153c4f87aca2ffc722c44, type: 3}
+    - target: {fileID: 5266168215538406976, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71595764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266168215538406976, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8773585
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266168215538406976, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7184031
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5405757981390459764, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d5f481163e21f54aa0e3149a5a8fe9e, type: 3}
 --- !u!4 &8149655381146830653 stripped
 Transform:
