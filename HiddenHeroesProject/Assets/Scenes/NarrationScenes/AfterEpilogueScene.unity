@@ -349,18 +349,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The whole night we didn't sleep. By the time we got back, it was morning.
+  m_text: "The whole night we didn't sleep. By the time we got back it was morning.
     Our coworkers were like \"Oh. You can back alive. We thought\u2026\" At the time,
-    we really didn't think it was that dangerous. It was only afterward that we realized
-    how dangerous it was. We were lucky. There were a lot of people who died. But
-    exactly how many it's hard to say because there's no way to count. We just happened
-    to be in the square and didn't see, since that's when the students were negotiating.
-    In the end, they were forced to leave. If any of them stayed\u2026 Later I saw
-    on the news that some students refused to leave. Most of those people probably
-    died. We didn't know because as soon as things got bad we left. If we stayed
-    our chances would've been slim. But if anyone really refused to leave then, yeah.
-    When were there at midnight there were these armed vehicles, and tanks, already
-    inside the square. So at that time, it was super dangerous."
+    we really didn't think it was that dangerous. It was only afterwards that we
+    realized how dangerous it was. We were lucky. There were a lot of people who
+    died. But exactly how many it's hard to say, beacuse there's no way to count.
+    We just happened to be the square, and didn't see, since that's when the students
+    were negotiating. At the end they were forced to leave. If any of them stayed\u2026
+    Later I saw on the news that some students refused to leave. Most of those people
+    probably died. We didn't know because as soon as things got bad we left. If we
+    stayed our chances would've been slim. But if anyone really refused to leave
+    then, yeah. When were were there at midnight there were these armed vehicles,
+    tanks, already inside the square. So at that time it was super dangerous.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}

@@ -361,10 +361,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "And we saw the other 2 coworkers waiting for us. And they said \u201CIf
-    we didn\u2019t see you come out soon, we were going to start searching the hospitals\u201D
-    because the wounded and shot had been sent to the hospitals by residents. Some
-    of then died there."
+  m_text: And we saw the other 2 coworkers waiting for us. And they said "If we didn't
+    see you come out soon, we were going to start searching the hospitals" because
+    the wounded and shot had been sent to the hospitals by residents. Some of then
+    died there.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
