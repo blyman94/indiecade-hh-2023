@@ -1908,6 +1908,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4178140354366549060, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
+      propertyPath: obstacles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4178140354366549060, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 4488753200536172737, guid: a9a7661bbe253a14f930fcad2c4625bc, type: 3}
     - target: {fileID: 4178140354366549065, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
       propertyPath: m_Name
       value: ObstacleSpawner (2)
@@ -2718,6 +2726,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4178140354366549060, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
+      propertyPath: obstacles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4178140354366549060, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 4488753200536172737, guid: a9a7661bbe253a14f930fcad2c4625bc, type: 3}
     - target: {fileID: 4178140354366549065, guid: a48f99ced23698d4f9dbfa019807ab7f, type: 3}
       propertyPath: m_Name
       value: ObstacleSpawner
