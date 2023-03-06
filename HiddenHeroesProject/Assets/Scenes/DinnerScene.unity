@@ -233,6 +233,7 @@ RectTransform:
   m_Children:
   - {fileID: 1806836100}
   - {fileID: 963645807}
+  - {fileID: 1008163880}
   m_Father: {fileID: 1595668815}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -307,7 +308,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1595668815}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -469,8 +470,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -72}
-  m_SizeDelta: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 321.276, y: -67.63907}
+  m_SizeDelta: {x: -642.5519, y: -135.2781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121658430
 MonoBehaviour:
@@ -492,7 +493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: ...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
@@ -961,7 +962,7 @@ RectTransform:
   - {fileID: 1232644238}
   - {fileID: 293399805}
   m_Father: {fileID: 1595668815}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1146,7 +1147,6 @@ GameObject:
   - component: {fileID: 634219731}
   - component: {fileID: 634219730}
   - component: {fileID: 634219729}
-  - component: {fileID: 634219728}
   - component: {fileID: 634219727}
   m_Layer: 5
   m_Name: ScreenFader (1)
@@ -1154,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &634219726
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1595668815}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1199,33 +1199,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &634219728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634219725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f33c901ef2b8974bbe4e217655a2ab8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnStartResponse:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 634219729}
-        m_TargetAssemblyTypeName: ScreenFader, Assembly-CSharp
-        m_MethodName: StartFadeOut
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1277,7 +1250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2003,7 +1976,6 @@ GameObject:
   - component: {fileID: 1008163883}
   - component: {fileID: 1008163882}
   - component: {fileID: 1008163881}
-  - component: {fileID: 1008163884}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2018,19 +1990,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008163879}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 121658429}
-  m_Father: {fileID: 1595668815}
-  m_RootOrder: 5
+  m_Father: {fileID: 30682969}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -535}
-  m_SizeDelta: {x: 480, y: 270}
+  m_AnchoredPosition: {x: 1.209, y: 72.209045}
+  m_SizeDelta: {x: 765.8799, y: 250.0203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008163881
 MonoBehaviour:
@@ -2101,14 +2073,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4d567470e1ecd004bac657c24e71e9e3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2126,26 +2098,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008163879}
   m_CullTransparentMesh: 1
---- !u!95 &1008163884
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008163879}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a14367a5a0437d54480c9a9e3efb3ee3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1232644237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2582,6 @@ RectTransform:
   - {fileID: 1006780834}
   - {fileID: 427144740}
   - {fileID: 30682969}
-  - {fileID: 1008163880}
   - {fileID: 634219726}
   - {fileID: 49943749}
   - {fileID: 441725195}
@@ -2672,7 +2623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextPopupAnimator: {fileID: 30682970}
-  NextButtonAnimator: {fileID: 1008163884}
   Passages:
   - 'Sun: I was thinking of seeing my grandmother this weekend.'
   - 'Zhao: Yeah?'
@@ -2730,8 +2680,8 @@ MonoBehaviour:
   - "Zhao: Agreed. Let\u2019s go."
   CurrentDialogueString: {fileID: 11400000, guid: 750d336e6cd25b3488cb151447769aee, type: 2}
   startDelayTime: 1
-  timeBeforeButton: 1
-  timeBeforeNextPassage: 1
+  timeBeforeButton: 0
+  timeBeforeNextPassage: 0
   cameraShakeTime: 10
   backgroundShakers:
   - {fileID: 1315862123}

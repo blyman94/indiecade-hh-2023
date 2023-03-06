@@ -5,7 +5,6 @@ using UnityEngine;
 public class DinnerSceneSequence : MonoBehaviour
 {
     public Animator TextPopupAnimator;
-    public Animator NextButtonAnimator;
     [TextArea(5, 5)]
     public string[] Passages;
     [TextArea(5, 5)]
@@ -33,16 +32,13 @@ public class DinnerSceneSequence : MonoBehaviour
     private IEnumerator DinnerSequenceRoutine()
     {
         yield return new WaitForSeconds(startDelayTime);
-
+        TextPopupAnimator.SetTrigger("FloatUp");
+        
         for (int i = 0; i < Passages.Length; i++)
         {
-            NextButtonAnimator.Play("NextButton_Idle");
-            TextPopupAnimator.SetTrigger("Reset");
             yield return new WaitForSeconds(timeBeforeNextPassage);
             CurrentDialogueString.Value = Passages[i];
-            TextPopupAnimator.SetTrigger("FloatUp");
             yield return new WaitForSeconds(timeBeforeButton);
-            NextButtonAnimator.Play("NextButton_FloatUp");
             AwaitingPlayerInput = true;
             while (AwaitingPlayerInput)
             {
@@ -52,7 +48,6 @@ public class DinnerSceneSequence : MonoBehaviour
 
         if (IsFirstScene)
         {
-            NextButtonAnimator.Play("NextButton_Idle");
             TextPopupAnimator.SetTrigger("Reset");
             truckConvoyAnimator.SetTrigger("MoveLeft");
             foreach (UIImageShake shaker in backgroundShakers)
@@ -60,16 +55,13 @@ public class DinnerSceneSequence : MonoBehaviour
                 shaker.StartShake();
             }
             yield return new WaitForSeconds(cameraShakeTime);
+            TextPopupAnimator.SetTrigger("FloatUp");
 
             foreach (string passage in PassagesAfter)
             {
-                NextButtonAnimator.Play("NextButton_Idle");
-                TextPopupAnimator.SetTrigger("Reset");
                 yield return new WaitForSeconds(timeBeforeNextPassage);
                 CurrentDialogueString.Value = passage;
-                TextPopupAnimator.SetTrigger("FloatUp");
                 yield return new WaitForSeconds(timeBeforeButton);
-                NextButtonAnimator.Play("NextButton_FloatUp");
                 AwaitingPlayerInput = true;
                 while (AwaitingPlayerInput)
                 {
@@ -78,8 +70,7 @@ public class DinnerSceneSequence : MonoBehaviour
             }
         }
 
-        NextButtonAnimator.Play("NextButton_Idle");
-        TextPopupAnimator.SetTrigger("Reset");
+        TextPopupAnimator.SetTrigger("FloatDown");
         FadeOutSceneEvent?.Raise();
     }
 }
