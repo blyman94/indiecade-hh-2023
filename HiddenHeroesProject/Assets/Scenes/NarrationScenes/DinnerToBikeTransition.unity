@@ -363,12 +363,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: So that night while a bunch of coworkers and I were eating, we saw a lot
     of army trucks filled with soldiers. They charged through the street right in
-    front of the building we were in, heading into the city. There were a lot, maybe
-    more than 40. And as we were eating we thought "Oh! Something must've happened"
-    because at this point the students had been protesting, occupying the square,
-    for like a month, and the government had already sent out warnings several times.
-    So after dinner, I and 3 coworkers decided we decided we were going to take a
-    look. So we got on our bikes and headed into the city.
+    front of the building we were in, heading into the city. There a lot, maybe more
+    than 40. And as we were eating we thought "Oh! Something must've happened" because
+    at this point the students had been protesting, occupying the square, for like
+    a month, and the government had already sent out warnings several times. So after
+    dinner I and 3 coworkers decided we decided we were going to take a look. So
+    we got on our bikes and headed into the city.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
   m_sharedMaterial: {fileID: 17145577261169816, guid: b6c58067f340dd64ab5615fbe92db02f, type: 2}
